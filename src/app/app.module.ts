@@ -19,8 +19,8 @@ import { CurrencyKeyboardPageModule } from './pages/currency-keyboard/currency-k
   entryComponents: [],
   imports: [
     BrowserModule,
-    IonicModule.forRoot({ mode: 'ios' }),
-    // IonicModule.forRoot(),
+    // IonicModule.forRoot({ mode: 'ios' }),
+    IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
     ConfirmationPageModule,
