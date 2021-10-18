@@ -1,0 +1,28 @@
+ion-title{
+    font-size: 15px;
+}
+ion-content{
+    --background: #1f1f1f;
+}
+.value{
+    height: 60%;
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ion-grid{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background: #edeef2;
+}
+.removeButton{
+    --background: #a0a0a0;
+    color: #fff;
+}
+.placeholder{
+    color: gray;
+}

@@ -1,0 +1,41 @@
+<ion-header>
+	<ion-toolbar color="AIRTIME">
+		<ion-title>
+			Home
+		</ion-title>
+		<ion-buttons slot="end">
+			<ion-button>
+					{{dataService.amount | currency : "R "}}
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+	<ion-list>
+		<ion-item (click)="product('product-types')">
+			<ion-label>
+				Airtime
+			</ion-label>
+			<ion-icon name="phone-portrait-outline" slot="end"></ion-icon>
+		</ion-item>
+
+		<ion-item (click)="product('Electricity')">
+			<ion-label>
+				Electricity
+			</ion-label>
+			<ion-icon name="bulb-outline" slot="end"></ion-icon>
+		</ion-item>
+
+		<ion-item (click)="product('Data')">
+			<ion-label>
+				Data
+			</ion-label>
+			<ion-icon name="wifi-outline" slot="end"></ion-icon>
+		</ion-item>
+
+		
+	</ion-list>
+
+</ion-content>

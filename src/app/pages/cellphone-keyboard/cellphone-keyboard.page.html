@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button (click)=" close()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title> Enter Cellphone Number</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <div class="value">
+    <span *ngIf="number !=''"> {{this.phoneFormat(number)}}</span>
+    <span *ngIf="number==''" class="placeholder"> 000 000 0000</span>
+  </div>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="light" (click)="add('1')" expand="full">1</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" (click)="add('2')" expand="full">2</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" (click)="add('3')" expand="full">3</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="light" (click)="add('4')" expand="full">4</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" (click)="add('5')" expand="full">5</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" (click)="add('6')" expand="full">6</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="light" (click)="add('7')" expand="full">7</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" (click)="add('8')" expand="full">8</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" (click)="add('9')" expand="full">9</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="medium" (click)="remove()" expand="full">
+          <i class="fas fa-backspace"></i>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="light" (click)="add('0')" expand="full">0</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="success" (click)="done()" expand="full">Done</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

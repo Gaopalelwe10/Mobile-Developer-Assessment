@@ -1,0 +1,35 @@
+.pin{
+  border-bottom: 1px dashed #dfdfdf !important;
+}
+ion-list{
+    margin: 10px;
+}
+.isOpen{
+    ion-label{
+        p{
+            color: black;
+        }
+    }
+}
+.total{
+    font-weight: bold;
+    color: black;
+}
+.separate-items{
+    margin: 10px;
+    font-weight: bold;
+    ion-label{
+        color:black;
+     }
+}
+ion-item{
+    ion-icon {
+        color:black;
+        left: 6px;
+        font-weight: bold;
+    }
+}
+
+ion-toggle{
+    left: -5px;
+}
