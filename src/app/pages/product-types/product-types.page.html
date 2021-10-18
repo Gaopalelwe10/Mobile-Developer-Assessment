@@ -140,8 +140,8 @@
 <ion-footer class="ion-no-border ion-no-shadow">
   <ion-grid>
     <ion-row>
-      <ion-col (click)="sell()">
-        <ion-button expand="full" color="dark" [disabled]="!summary.availableDoneActions.appendAmount">
+      <ion-col >
+        <ion-button expand="full" color="dark" [disabled]="!summary.availableDoneActions.appendAmount" (click)="sell()">
           <span class="ion-text-center">   {{summary.availableDoneActions?.name}} </span>
         
           <span class="ion-text-right"> 
